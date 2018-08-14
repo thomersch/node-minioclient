@@ -1,3 +1,3 @@
 FROM circleci/node
 
-RUN cd /usr/local/bin && wget https://dl.minio.io/client/mc/release/linux-amd64/mc && chmod +x mc
+RUN sudo wget -O /usr/local/bin/minioclient https://dl.minio.io/client/mc/release/linux-amd64/mc && sudo chmod +x /usr/local/bin/minioclient
